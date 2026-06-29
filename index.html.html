@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthy Life Medical Centre - Patient Registration Form</title>
+  <style>
+    body {
+      background-color: lightgray;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      width: 600px;
+      margin: 30px auto;
+      border: 3px solid navy;
+      padding: 20px;
+      background-color: white;
+    }
+
+    h2 {
+      text-align: center;
+      color: darkgreen;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div style="text-align:center;">
+      <img src="logo.webp" alt="Hospital Logo" width="150" height="150">
+    </div>
+    <h2>Healthy Life Medical Centre - Patient Registration Form</h2>
+
+    <label for="fullname">Patient Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+
+    <label>Medical Conditions:</label>
+    <input type="checkbox" name="condition" value="Diabetes"> Diabetes
+    <input type="checkbox" name="condition" value="Hypertension"> Hypertension
+    <input type="checkbox" name="condition" value="Asthma"> Asthma
+    <input type="checkbox" name="condition" value="None"> None
+
+    <label for="department">Department:</label>
+    <select id="department" name="department">
+      <option value="General Medicine">General Medicine</option>
+      <option value="Pediatrics">Pediatrics</option>
+      <option value="Dentistry">Dentistry</option>
+      <option value="Laboratory">Laboratory</option>
+    </select>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>
